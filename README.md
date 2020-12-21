@@ -36,7 +36,7 @@ Pada *class* Board terdapat beberapa method yang diubah seperti: <br>
 	this.setCursor(blankCursor);
   }
   ```
-  Dengan menggunakan method ini, akan dibentuk suatu blank cursor sehingga pemain tidak akan terganggu dengan adanya cursor bawaan dari mouse ketika bermain. Untuk melakukan ini memanfaatkan method ``BufferedImage``. 
+  Dengan menggunakan method ini, akan dibentuk suatu *blank cursor* sehingga pemain tidak akan terganggu dengan adanya *cursor* bawaan dari *mouse* ketika bermain. Untuk melakukan ini memanfaatkan method ``BufferedImage``. 
   
 * *class* ``TAdapter`` dihapus, kemudian digantikan dengan membuat internal class ``MouseHandler``<br>
   Fungsi internal class ini yaitu dapat digunakan untuk membaca *mouse event*.
