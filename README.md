@@ -29,10 +29,9 @@ Method ini bertugas untuk menginisialisasi Board Windows. Pada method ini terdap
 		//hideCursor agar ketika program di run, cursor mouse tidak terlihat
 		this.hideCursor();
 ```
-<br>
-Perubahan dapat dilihat pada bagian `MouseHandler` dan `hideCursor` yang menggantikan fungsi `add(KeyListener)` dan `setFocusable` pada applikasi *Collision Detection* sebelumnya. Selanjutnya, membuat objek `MouseHandler` yang kemudian akan digunakan juga untuk menambah `MouseListener`.
-<br> 
-	
+
+Perubahan dapat dilihat pada bagian `MouseHandler` dan `hideCursor` yang menggantikan fungsi `add(KeyListener)` dan `setFocusable` pada applikasi *Collision Detection* sebelumnya. Selanjutnya, membuat objek `MouseHandler` yang kemudian akan digunakan juga untuk menambah `MouseListener`.<br>
+
 * Method ``hideCursor``<br> 
 Method ini berfungsi untuk menghilangkan *cursor* saat permainan berlangsung. <br> 
 ```hide
