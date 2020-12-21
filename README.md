@@ -16,8 +16,8 @@ dipicu oleh pengguna pasa suatu komponen GUI. Contoh *event handling* disini yai
    ### Board 
    Pada *class* Board terdapat beberapa method yang diubah seperti: <br>
    * Method ``initBoard``<br>
-	Method ini bertugas untuk menginisialisasi Board Windows. Pada method ini terdapat beberapa modifikasi pada bagian: <br>
-	    
+	Method ini bertugas untuk menginisialisasi Board Windows. Pada method ini terdapat beberapa modifikasi pada bagian: 
+<br>  
        ```handler
 	  MouseHandler handler = new MouseHandler();
 	  this.addMouseListener(handler);
@@ -26,7 +26,8 @@ dipicu oleh pengguna pasa suatu komponen GUI. Contoh *event handling* disini yai
 	   this.hideCursor();
         ```
   <br> 	
- 	Perubahan dapat dilihat pada bagian `MouseHandler` dan `hideCursor` yang menggantikan fungsi `add(KeyListener)` dan `setFocusable` pada applikasi *Collision Detection* sebelumnya. Selanjutnya, membuat objek `MouseHandler` yang kemudian akan digunakan juga untuk menambah `MouseListener`.<br> 
+ 	 Perubahan dapat dilihat pada bagian `MouseHandler` dan `hideCursor` yang menggantikan fungsi `add(KeyListener)` dan `setFocusable` pada applikasi *Collision Detection* sebelumnya. Selanjutnya, membuat objek `MouseHandler` yang kemudian akan digunakan juga untuk menambah `MouseListener`.
+<br> 
 	
 * Method ``hideCursor`` 
 	Method ini berfungsi untuk menghilangkan *cursor* saat permainan berlangsung. <br> 
