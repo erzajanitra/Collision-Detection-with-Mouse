@@ -4,7 +4,7 @@ diperlukannya *event handling*. Kata *event* disini berarti suatu peristiwa yang
 dipicu oleh pengguna pasa suatu komponen GUI. Contoh *event handling* disini yaitu: 
 - **Keyboard Handling**<br>
    Penyelesaian suatu *event* menggunakan *keyboard handling* ini digunakan pada aplikasi Space 
-   Invader pada tugas sebelumnya. Untuk dapat melihat detailnya dapat dilihat di: <br> 
+   Invader pada tugas sebelumnya. Untuk dapat melihat detailnya dapat dilihat pada link berikut: <br> 
    [Collision Detection](https://github.com/erzajanitra/CollisionDetection)
 - **Mouse Handling**<br> 
    Berdasarkan link di atas, terdapat beberapa modifikasi agar dapat digunakan menggunakan *mouse handling*. 
