@@ -77,7 +77,7 @@ Pada *class* Board terdapat beberapa method yang diubah seperti: <br>
 Karena pada bagian *class* `Board` tidak dilakukannya perhitungan yang dilihat dari perubahan (dx/dy), maka pada *class* `Spaceship` ini terjadinya penghapusan variabel dx dan variabel dy karena dianggap tidak digunakan lagi. <br> 
 
 # Class Diagram 
-
+![classdiagram](https://github.com/erzajanitra/Collision-Detection-with-Mouse/blob/master/gambar/collision%20detection%20mouse.jpg)
 
 # Jalannya Program 
 Jalannya Program dengan menggunakan *Mouse Handling* dapat dilihat pada link berikut: 
