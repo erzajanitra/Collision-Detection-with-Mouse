@@ -16,15 +16,34 @@ dipicu oleh pengguna pasa suatu komponen GUI. Contoh *event handling* disini yai
 ### Board 
 Pada *class* Board terdapat beberapa method yang diubah seperti: <br>
 * Method ``initBoard``<br>
-	Method ini bertugas untuk menginisialisasi Board Windows. Pada method ini terdapat beberapa modifikasi pada bagian: 
-
-
-
+Method ini bertugas untuk menginisialisasi Board Windows. Pada method ini terdapat beberapa modifikasi pada bagian: 
+```private void initBoard() {
+    	
+        setBackground(Color.BLACK);
+        ingame = true; //menandain sedang dalam game
+        
+        //mouse handler
+        MouseHandler handler = new MouseHandler();
+		this.addMouseListener(handler);
+		this.addMouseMotionListener(handler);
+		//hideCursor agar ketika program di run, cursor mouse tidak terlihat
+		this.hideCursor();
+```
+<br>
 Perubahan dapat dilihat pada bagian `MouseHandler` dan `hideCursor` yang menggantikan fungsi `add(KeyListener)` dan `setFocusable` pada applikasi *Collision Detection* sebelumnya. Selanjutnya, membuat objek `MouseHandler` yang kemudian akan digunakan juga untuk menambah `MouseListener`.
 <br> 
 	
-* Method ``hideCursor`` 
-	Method ini berfungsi untuk menghilangkan *cursor* saat permainan berlangsung. <br> 
+* Method ``hideCursor``<br> 
+Method ini berfungsi untuk menghilangkan *cursor* saat permainan berlangsung. <br> 
+```hide
+  public void hideCursor() {
+	BufferedImage cursorImg = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
+	Cursor blankCursor = Toolkit.getDefaultToolkit().createCustomCursor(
+		cursorImg, new Point(0, 0), "blank cursor");
+	this.setCursor(blankCursor);
+  }
+```
+
 		
   	 
     
