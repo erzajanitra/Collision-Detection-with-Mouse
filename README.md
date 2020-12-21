@@ -38,6 +38,54 @@ Pada *class* Board terdapat beberapa method yang diubah seperti: <br>
   ```
   Dengan menggunakan method ini, akan dibentuk suatu blank cursor sehingga pemain tidak akan terganggu dengan adanya cursor bawaan dari mouse ketika bermain. Untuk melakukan ini memanfaatkan method ``BufferedImage``. 
   
+* *class* ``TAdapter`` dihapus, kemudian digantikan dengan membuat internal class ``MouseHandler``<br>
+  Fungsi internal class ini yaitu dapat digunakan untuk membaca *mouse event*.
+  ```internal class MouseHandler
+  private class MouseHandler implements MouseListener, MouseMotionListener {
+
+	@Override//bergerak mengikuti cursor ketika mouse ditahan
+	public void mouseDragged(MouseEvent e) {
+		spaceship.x = e.getX() ;
+		spaceship.y = e.getY() ;
+		
+	}
+
+	@Override //bergerak mengikuti cursor
+	public void mouseMoved(MouseEvent e) {
+		spaceship.x = e.getX() ;
+		spaceship.y = e.getY() ;
+		
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		
+		
+	}
+	
+	@Override //ketika mouse ditekan sekali akan mengeluarkan missile
+	public void mousePressed(MouseEvent e) {
+		spaceship.fire();
+		
+	}
+  ```
+  Perbedaan *class* di atas (dengan menggunakan *Mouse Handling*) dengan *class* pada Aplikasi yang menggunkan *Keyboard Handling* adalah jika pada *Keyboard Handling* menggeser koordinar dari objek tidak dilakukannya perhitungan melalui perubahan (dx/dy) dengan menggunakan method ``KeyPressed``. Sedangkan, pada *Mouse Handling* dapat langsung mengambil koordinat x dan y dari *mouse* (seperti apa yang di gambarkan pada method ``MouseMoved`` dan ``MouseDragged``).<br>
+  
+  Apabila kursor atau *mouse* mengarahkan keluar dari *Board* maka *spaceship* tidak akan muncul tetapi akan berhenti pada berbatasan jendela. Dan ketika *mouse* meng-*click* (``MousePressed``) maka *spaceship* akan menembakan peluru. <br>
+
+## Spaceship
+Karena pada bagian *class* `Board` tidak dilakukannya perhitungan yang dilihat dari perubahan (dx/dy), maka pada *class* `Spaceship` ini terjadinya penghapusan variabel dx dan variabel dy karena dianggap tidak digunakan lagi. <br> 
+
+# Class Diagram 
+
+
+# Jalannya Program 
+Jalannya Program dengan menggunakan *Mouse Handling* dapat dilihat pada link berikut: 
+[Jalannya Program MouseHandling](https://youtu.be/z2Ek4W9zPAU)
+  
+  
+
+  
 		
   	 
     
