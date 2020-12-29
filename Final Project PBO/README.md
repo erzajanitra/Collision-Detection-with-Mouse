@@ -9,7 +9,7 @@ Permainan *Puzzle* mungkin sudah tidak asing kita dengar, kata *puzzle* berasal 
 - **Choose Difficullity**<br>
 *Choose Difficulity* merupakan sebuah fitur dimana pemain memilih *level* yang akan dimainkan. Beberapa pilihan *level* yang ditawarkan antara lain: **Easy**, **Medium**, dan **Hard**. Perbedaan antar level yakni perbedaan potongan *puzzle* atau `NUMBER_OF_BUTTONS_` dan waktu yang diberikan. 
 
-  Potongan *puzzle* yang diberikan meliputi 9 potongan *puzzle* untuk **Easy**, 16 potongan *puzzle* untuk **Medium**, dan 25 potongan *puzzle* untuk *level* **Hard**. Selain itu, untuk waktu yang diberikan tiap *level*nya juga berbeda dan berbagai pilihan waktu untuk tiap *level*nya yakni meliputi 15 *seconds* untuk pilihan **Easy**, 30 *seconds* (**Medium**), dan 45 seconds (**Hard**)
+  Potongan *puzzle* yang diberikan meliputi 9 potongan *puzzle* untuk **Easy**, 16 potongan *puzzle* untuk **Medium**, dan 25 potongan *puzzle* untuk *level* **Hard**. Selain itu, untuk waktu yang diberikan tiap *level*nya juga berbeda dan berbagai pilihan waktu untuk tiap *level*nya yakni meliputi 15 *seconds* untuk pilihan **Easy**, 30 *seconds* (**Medium**), dan 45 *seconds* (**Hard**)
   
 - **Penampilan *High Score***<br> 
 Dalam fitur penampilan diperlukan class bernama `ScoreInput` dan `ScoreOutput` yang dimana dalam class ini akan mengimplementasikan interface Serializable agar objek pada class tersebut dapat menerima input data dan membaca data dengan menggunakan `ObjectInputStream` dan `ObjectOutputStream`.
